@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">看你笨不笨</string>
+
+    <string name="question_1">請問\u00A0\u00A0\u00A0 C + O\u00A0\u00A0\u00A0 的結果是?</string>
+
+    <string name="question_1_radio_a">\u00A0\u00A0一氧化碳</string>
+    <string name="question_1_radio_b">\u00A0\u00A0二氧化碳</string>
+    <string name="question_1_radio_c">\u00A0\u00A0三氧化碳</string>
+
+    <string name="question_2">
+        <![CDATA[
+        請問
+        <br><br>
+        \u00A0\u00A0\u00A0\u00A0<b><font color="#ffbf00">&lt;硫磺&gt;</font></b>
+        <br><br>
+        遇到乾火時，會有什麼反應?
+        ]]>
+    </string>
+
+    <string name="question_2_radio_a">等死</string>
+    <string name="question_2_radio_b">
+        <![CDATA[
+        將一個 layout 併入另一個 layout,<br>
+        可節省一層<b>ViewGroup</b>
+        ]]>
+    </string>
+    <string name="question_2_radio_c">滅火阿，不能還能怎麼辦!</string>
+
+
+    <string name="question_3">
+        <![CDATA[
+        請問<br>製作磁浮石需要怎麼做?
+        ]]>
+    </string>
+    <string name="question_3_radio_a">用手做</string>
+    <string name="question_3_radio_b">用嘴做</string>
+    <string name="question_3_radio_c">以上皆非</string>
+</resources>

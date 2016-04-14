@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="No."
+        android:textColor="#ffffff"
+        android:textSize="52sp" />
+
+    <TextView
+        android:id="@+id/tv_question"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        tools:text="這個是題目!" />
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <RadioButton
+        android:id="@+id/radio_a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#84ffffff"
+        android:onClick="click"
+        android:tag="A"
+        android:textColor="#0d2546"
+        android:textSize="24sp"
+        tools:text="A 答案"/>
+
+    <RadioButton
+        android:id="@+id/radio_b"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#84ffffff"
+        android:onClick="click"
+        android:tag="B"
+        android:textColor="#0d2546"
+        android:textSize="24sp"
+        tools:text="B 答案" />
+
+    <RadioButton
+        android:id="@+id/radio_c"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#84ffffff"
+        android:onClick="click"
+        android:tag="C"
+        android:textColor="#0d2546"
+        android:textSize="24sp"
+        tools:text="C 答案" />
+    </RadioGroup>
+
+</merge>
