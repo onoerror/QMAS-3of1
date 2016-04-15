@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.TextView;
 // abstract activity 不需要宣告在 manifest
@@ -15,6 +16,8 @@ public abstract class QuestionActivity extends AppCompatActivity{
     private TextView m_tv_no,m_tv_question;
     private RadioButton m_radio_a,m_radio_b,m_radio_c;
     private Button m_btn_back,m_btn_next;
+    private LinearLayout m_pic_picturn;
+
 
     private static int sLastQuestionIndex,// 上個畫面的 index
                         sQuestionIndex = 0;// 只需要一個 index，所以宣告為靜態
@@ -47,6 +50,7 @@ public abstract class QuestionActivity extends AppCompatActivity{
         m_radio_a = (RadioButton) findViewById(R.id.radio_a);
         m_radio_b = (RadioButton) findViewById(R.id.radio_b);
         m_radio_c = (RadioButton) findViewById(R.id.radio_c);
+        m_pic_picturn = (LinearLayout)findViewById(R.id.layout);
 
 
         String no = String.valueOf(sQuestionIndex+1);
@@ -60,6 +64,7 @@ public abstract class QuestionActivity extends AppCompatActivity{
         m_radio_a.setText(sAdapter.getQuestionOptionA(sQuestionIndex));
         m_radio_b.setText(sAdapter.getQuestionOptionB(sQuestionIndex));
         m_radio_c.setText(sAdapter.getQuestionOptionC(sQuestionIndex));
+        m_pic_picturn.setBackground(sAdapter.getBackground(sQuestionIndex));
     }
 
     // 按下 BACK

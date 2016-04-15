@@ -1,22 +1,22 @@
-package com.quizmagic.qmas;
+package com.quizmagic.qmas.Activity;
 
-import android.graphics.drawable.Drawable;
+import com.quizmagic.qmas.QuestionActivity;
 
-public class Activity1 extends QuestionActivity {
+public class Activity3 extends QuestionActivity {
 
     @Override
     protected Class getBackActivityClass() {
-        return null;
-    }
-
-    @Override
-    protected Class getNextActivityClass() {
         return Activity2.class;
     }
 
     @Override
+    protected Class getNextActivityClass() {
+        return null;
+    }
+
+    @Override
     protected int getBackButtonVisibility() {
-        return QuestionActivity.GONE;
+        return QuestionActivity.VISIBLE;
     }
 
     @Override

@@ -1,4 +1,6 @@
-package com.quizmagic.qmas;
+package com.quizmagic.qmas.Activity;
+
+import com.quizmagic.qmas.QuestionActivity;
 
 public class Activity2 extends QuestionActivity {
 

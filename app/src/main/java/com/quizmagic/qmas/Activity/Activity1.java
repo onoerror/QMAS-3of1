@@ -1,20 +1,22 @@
-package com.quizmagic.qmas;
+package com.quizmagic.qmas.Activity;
 
-public class Activity3 extends QuestionActivity {
+import com.quizmagic.qmas.QuestionActivity;
+
+public class Activity1 extends QuestionActivity {
 
     @Override
     protected Class getBackActivityClass() {
-        return Activity2.class;
-    }
-
-    @Override
-    protected Class getNextActivityClass() {
         return null;
     }
 
     @Override
+    protected Class getNextActivityClass() {
+        return Activity2.class;
+    }
+
+    @Override
     protected int getBackButtonVisibility() {
-        return QuestionActivity.VISIBLE;
+        return QuestionActivity.GONE;
     }
 
     @Override

@@ -1,9 +1,11 @@
-package com.quizmagic.qmas;
+package com.quizmagic.qmas.Activity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+
+import com.quizmagic.qmas.R;
 
 
 public class MainActivity extends AppCompatActivity {

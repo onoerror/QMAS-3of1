@@ -1,6 +1,7 @@
 package com.quizmagic.qmas;
 
 import android.content.res.Resources;
+import android.graphics.drawable.Drawable;
 import android.text.Html;
 
 import java.util.ArrayList;
@@ -15,17 +16,21 @@ public class QuestionFromStringResource implements QuestionAdapter {
         list.add(new Question(res.getString(R.string.question_1),
                 res.getString(R.string.question_1_radio_a),
                 res.getString(R.string.question_1_radio_b),
-                res.getString(R.string.question_1_radio_b))
+                res.getString(R.string.question_1_radio_b),
+                        res.getDrawable(R.drawable.noon))
         );
         list.add(new Question(res.getString(R.string.question_2),
                         res.getString(R.string.question_2_radio_a),
                         res.getString(R.string.question_2_radio_b),
-                        res.getString(R.string.question_2_radio_b))
+                        res.getString(R.string.question_2_radio_b),
+                        res.getDrawable(R.drawable.ker))
+
         );
         list.add(new Question(res.getString(R.string.question_3),
                         res.getString(R.string.question_3_radio_a),
                         res.getString(R.string.question_3_radio_b),
-                        res.getString(R.string.question_3_radio_b))
+                        res.getString(R.string.question_3_radio_b),
+                        res.getDrawable(R.drawable.berk))
         );
     }
 
@@ -39,6 +44,7 @@ public class QuestionFromStringResource implements QuestionAdapter {
         Question question = list.get(index);// 讀取一個 Question 物件
         String text = question.getQuestion();
         return Html.fromHtml(text);// 字串內容有 HTML 語法，需轉換
+
     }
 
     @Override
@@ -54,5 +60,12 @@ public class QuestionFromStringResource implements QuestionAdapter {
     @Override
     public CharSequence getQuestionOptionC(int index) {
         return Html.fromHtml(list.get(index).getOptionC());
+    }
+
+    @Override
+    public Drawable getBackground(int index) {
+        Question question = list.get(index);
+        Drawable drawable = question.getPicture();
+        return drawable;
     }
 }
